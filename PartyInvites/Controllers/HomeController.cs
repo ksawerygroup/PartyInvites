@@ -19,6 +19,11 @@ namespace PartyInvites.Controllers
 			return View("MyView");
 		}
 
+		public IActionResult RsvpForm()
+		{
+			return View();
+		}
+
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
 		{
