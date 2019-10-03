@@ -1,0 +1,30 @@
+﻿@model PartyInvites.Models.GuestResponse
+@{
+	ViewData["Title"] = "RsvpForm";
+}
+
+<h1>Formularz</h1>
+
+<form asp-action="RsvpForm" method="post">
+	<p>
+		<label asp-for="Name">Imię i nazwisko:</label>
+		<input asp-for="Name" />
+	</p>
+	<p>
+		<label asp-for="Email	">Adres E-mail:</label>
+		<input asp-for="Email" />
+	</p>
+	<p>
+		<label asp-for="Phone">Numer telefonu:</label>
+		<input asp-for="Phone" />
+	</p>
+	<p>
+		<label>Czy przyjdziesz na przyjęcie?</label>
+		<select asp-for="WillAttend">
+			<option value="">Wybierz opcję</option>
+			<option value="true">Tak, przyjdę</option>
+			<option value="false">Nie, nie przyjdę</option>
+		</select>
+	</p>
+	<button type="submit">Wyślij RSVP</button>
+</form>

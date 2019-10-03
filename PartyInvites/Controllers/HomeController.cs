@@ -10,7 +10,7 @@ namespace PartyInvites.Controllers
 {
 	public class HomeController : Controller
 	{
-		public IActionResult Index()
+		public ViewResult Index()
 		{
 			int hour = DateTime.Now.Hour;
 			int minutes = DateTime.Now.Minute;
@@ -19,7 +19,14 @@ namespace PartyInvites.Controllers
 			return View("MyView");
 		}
 
-		public IActionResult RsvpForm()
+		[HttpGet]
+		public ViewResult RsvpForm()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public ViewResult RsvpForm(GuestResponse guestResponse)
 		{
 			return View();
 		}
