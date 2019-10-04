@@ -1,0 +1,18 @@
+﻿@model PartyInvites.Models.GuestResponse
+
+@{
+	ViewData["Title"] = "Thanks";
+}
+
+<h1>Dziękujemy, @Model.Name!</h1>
+<p>
+	@if (Model.WillAttend == true)
+	{
+		@:Cieszymy się że przyjdziesz do nas. Napoje są już w lodówce!
+	}
+	else
+	{
+		@:Przykro nam że nie możesz się zjawić, ale dziekujemymy za informację.
+	}
+</p>
+<p>Kliknij <a asp-action="ListResponses">Tutaj</a>, aby wyświetlić listę gości</p>

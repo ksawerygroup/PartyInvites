@@ -32,3 +32,4 @@ D:\C#\nauka\ASPNetCoreMVC\PierwszyProjektZKsiążki\PartyInvites\PartyInvites\ob
 D:\C#\nauka\ASPNetCoreMVC\PierwszyProjektZKsiążki\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\PartyInvites.csproj.CopyComplete
 D:\C#\nauka\ASPNetCoreMVC\PierwszyProjektZKsiążki\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\Razor\Views\Home\MyView.cshtml.g.cs
 D:\C#\nauka\ASPNetCoreMVC\PierwszyProjektZKsiążki\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\Razor\Views\Home\RsvpForm.cshtml.g.cs
+D:\C#\nauka\ASPNetCoreMVC\PierwszyProjektZKsiążki\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\Razor\Views\Home\Thanks.cshtml.g.cs
