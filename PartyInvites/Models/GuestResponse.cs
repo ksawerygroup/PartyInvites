@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace PartyInvites.Models
 {
+	// kontrola poprawności i potwierdzenie przybycia
 	public class GuestResponse
 	{
 		public string Name { get; set; }
