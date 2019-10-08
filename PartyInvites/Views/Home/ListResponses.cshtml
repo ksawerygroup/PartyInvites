@@ -2,25 +2,26 @@
 @{
 	ViewData["Title"] = "ListResponses";
 }
+<div class="card-body">
+	<h1>Lista gości na przyjęciu</h1>
 
-<h1>Lista gości na przyjęciu</h1>
-
-<table>
-	<thead>
-		<tr>
-			<th>Imię i Nazwisko</th>
-			<th>Adres e-mail</th>
-			<th>Numer telefonu</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (PartyInvites.Models.GuestResponse r in Model)
-		{
+	<table class="table table-sm table-striped table-bordered">
+		<thead>
 			<tr>
-				<td>@r.Name</td>
-				<td>@r.Email</td>
-				<td>@r.Phone</td>
+				<th>Imię i Nazwisko</th>
+				<th>Adres e-mail</th>
+				<th>Numer telefonu</th>
 			</tr>
-		}
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			@foreach (PartyInvites.Models.GuestResponse r in Model)
+			{
+				<tr>
+					<td>@r.Name</td>
+					<td>@r.Email</td>
+					<td>@r.Phone</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
