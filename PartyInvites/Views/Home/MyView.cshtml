@@ -2,10 +2,11 @@
 	ViewData["Title"] = "Przyjęcie sylwestrowe";
 
 }
+<div class="text-center">
+	<h1>@ViewBag.Greeting</h1>
+	<p>Zapraszamy na wspaniałe przyjęcie.</p>
+	<p>Ty też zostałeś zaproszony</p>
+	@*<p>Jest godzina: @ViewBag.Hour</p>*@
 
-<h1>@ViewBag.Greeting, z widoku</h1>
-<h1>@ViewBag.Test</h1>
-<p>Zapraszamy na wspaniałe przyjęcie.</p>
-@*<p>Jest godzina: @ViewBag.Hour</p>*@
-
-<a class="btn btn-primary" asp-action="RsvpForm">Wyślij RSVP </a>
+	<a class="btn btn-primary" asp-action="RsvpForm">Wyślij RSVP </a>
+</div>

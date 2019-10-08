@@ -5,28 +5,32 @@
 }
 
 <h1>Formularz</h1>
-
-<form asp-action="RsvpForm" method="post">
-	<div asp-validation-summary="All"></div>	 @* wyświetla listę błędów z formularza *@
-	<p>
-		<label asp-for="Name">Imię i nazwisko:</label>
-		<input asp-for="Name" />
-	</p>
-	<p>
-		<label asp-for="Email	">Adres E-mail:</label>
-		<input asp-for="Email" />
-	</p>
-	<p>
-		<label asp-for="Phone">Numer telefonu:</label>
-		<input asp-for="Phone" />
-	</p>
-	<p>
-		<label>Czy przyjdziesz na przyjęcie?</label>
-		<select asp-for="WillAttend">
-			<option value="">Wybierz opcję</option>
-			<option value="true">Tak, przyjdę</option>
-			<option value="false">Nie, nie przyjdę</option>
-		</select>
-	</p>
-	<button class="btn btn-primary" type="submit">Wyślij RSVP</button>
-</form>
+<div class="card">
+	<div class="card-header text-center">RSVP</div>
+	<div class="card-body">
+		<form asp-action="RsvpForm" method="post">
+			<div asp-validation-summary="All" class="py-2"></div>	 @* wyświetla listę błędów z formularza *@
+			<div class="form-group">
+				<label asp-for="Name">Imię i nazwisko:</label>
+				<input asp-for="Name" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Email	">Adres E-mail:</label>
+				<input asp-for="Email" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Phone">Numer telefonu:</label>
+				<input asp-for="Phone" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label>Czy przyjdziesz na przyjęcie?</label>
+				<select asp-for="WillAttend" class="form-control form-control-sm">
+					<option value="">Wybierz opcję</option>
+					<option value="true">Tak, przyjdę</option>
+					<option value="false">Nie, nie przyjdę</option>
+				</select>
+			</div>
+			<button class="btn btn-primary" type="submit">Wyślij RSVP</button>
+		</form>
+	</div>
+</div>
