@@ -28,8 +28,16 @@ namespace PartyInvites.Controllers
 		[HttpPost]
 		public ViewResult RsvpForm(GuestResponse guestResponse)
 		{
-			Repository.AddResponse(guestResponse);
-			return View("Thanks", guestResponse);
+			if (ModelState.IsValid) // sprawdzanie poprawności danych zwraca true lub false
+			{
+				Repository.AddResponse(guestResponse);
+				return View("Thanks", guestResponse);
+			}
+			else
+			{
+				// Błąd kontroli poprawności danych
+				return View();
+			}
 		}
 
 		public ViewResult ListResponses()

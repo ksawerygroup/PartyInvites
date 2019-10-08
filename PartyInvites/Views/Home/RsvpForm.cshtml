@@ -7,6 +7,7 @@
 <h1>Formularz</h1>
 
 <form asp-action="RsvpForm" method="post">
+	<div asp-validation-summary="All"></div>	 @* wyświetla listę błędów z formularza *@
 	<p>
 		<label asp-for="Name">Imię i nazwisko:</label>
 		<input asp-for="Name" />
